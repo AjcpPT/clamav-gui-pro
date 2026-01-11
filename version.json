@@ -1,0 +1,89 @@
+{
+  "version": "3.0",
+  "release_date": "2025-01-10",
+  "release_name": "Professional Edition",
+  "minimum_python": "3.8",
+  "minimum_clamav": "0.103",
+  
+  "author": {
+    "name": "Arlindo Pereira",
+    "email": "Ajcppt@aol.com"
+  },
+  
+  "repository": {
+    "url": "https://github.com/AjcpPT/clamav-gui-pro",
+    "issues": "https://github.com/AjcpPT/clamav-gui-pro/issues",
+    "releases": "https://github.com/AjcpPT/clamav-gui-pro/releases"
+  },
+  
+  "license": "GPL-3.0",
+  
+  "dependencies": {
+    "system": {
+      "clamav": ">=0.103",
+      "clamav-daemon": ">=0.103",
+      "python3": ">=3.8"
+    },
+    "python": {
+      "PyQt6": ">=6.0.0"
+    }
+  },
+  
+  "features": [
+    "Real-time file protection",
+    "Automatic quarantine",
+    "Scheduled scans",
+    "Multi-language (EN/PT)",
+    "Custom databases",
+    "Statistics and reports",
+    "Context menu integration",
+    "Auto-update system"
+  ],
+  
+  "supported_platforms": [
+    "Ubuntu 20.04+",
+    "Debian 11+",
+    "Linux Mint 20+",
+    "Pop!_OS 20.04+",
+    "Other Debian-based distributions"
+  ],
+  
+  "changelog": {
+    "3.0": {
+      "date": "2025-01-10",
+      "major_features": [
+        "Real-time protection",
+        "Automatic quarantine",
+        "Scheduled scans",
+        "Multi-language support",
+        "Custom database support",
+        "Statistics and graphs",
+        "Context menu integration",
+        "Program auto-update"
+      ],
+      "bug_fixes": [
+        "Fixed menu duplication when changing language",
+        "Improved scan performance",
+        "Better memory management",
+        "Fixed permission handling"
+      ]
+    },
+    "2.0": {
+      "date": "2024-12-15",
+      "major_features": [
+        "PyQt6 redesign",
+        "Database management",
+        "Scan history",
+        "Multi-language foundation"
+      ]
+    },
+    "1.0": {
+      "date": "2024-11-01",
+      "major_features": [
+        "Initial release",
+        "Basic scanning",
+        "Simple GUI"
+      ]
+    }
+  }
+}

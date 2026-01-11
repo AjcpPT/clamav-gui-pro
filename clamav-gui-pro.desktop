@@ -1,0 +1,36 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=ClamAV GUI Pro
+GenericName=Antivirus Software
+GenericName[pt]=Software Antivírus
+Comment=Professional antivirus with real-time protection
+Comment[pt]=Antivírus profissional com proteção em tempo real
+Exec=python3 /home/USER/clamav-gui-pro/clamav_gui_pro.py
+Icon=security-medium
+Terminal=false
+Categories=System;Security;Utility;
+Keywords=antivirus;security;scan;malware;virus;protection;clamav;
+Keywords[pt]=antivirus;segurança;verificar;malware;vírus;proteção;clamav;
+StartupNotify=true
+StartupWMClass=clamav-gui-pro
+
+Actions=QuickScan;UpdateDB;Quarantine;
+
+[Desktop Action QuickScan]
+Name=Quick Scan
+Name[pt]=Verificação Rápida
+Exec=python3 /home/USER/clamav-gui-pro/clamav_gui_pro.py --quick-scan
+Icon=security-medium
+
+[Desktop Action UpdateDB]
+Name=Update Databases
+Name[pt]=Atualizar Bases de Dados
+Exec=python3 /home/USER/clamav-gui-pro/clamav_gui_pro.py --update-db
+Icon=software-update-available
+
+[Desktop Action Quarantine]
+Name=Quarantine Manager
+Name[pt]=Gestor de Quarentena
+Exec=python3 /home/USER/clamav-gui-pro/clamav_gui_pro.py --quarantine
+Icon=security-low
